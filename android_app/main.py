@@ -5,7 +5,7 @@ from kivy.properties import StringProperty
 import threading, requests, base64, tempfile, os
 from kivy.core.audio import SoundLoader
 
-BACKEND = "http://<YOUR_SERVER_IP>:8000"  # replace with your server IP or domain
+BACKEND ="http://localhost:8000"  # replace with your server IP or domain
 
 class KaidenUI(BoxLayout):
     status = StringProperty("Idle")
