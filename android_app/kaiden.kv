@@ -1,0 +1,20 @@
+<KaidenUI>:
+    orientation: "vertical"
+    padding: 12
+    spacing: 8
+    TextInput:
+        id: prompt
+        size_hint_y: None
+        height: "120dp"
+        text: ""
+    Button:
+        text: "Send to Kaiden"
+        size_hint_y: None
+        height: "48dp"
+        on_release: root.send_text(prompt.text)
+    Label:
+        text: root.status
+        size_hint_y: None
+        height: "30dp"
+    Label:
+        text: root.output_text
